@@ -13,8 +13,8 @@ def judge(a: int, b: int) -> str:
         if a % j == 0:
             num1_list.append(j)
     
-    for k in range(num1_list.__sizeof__):
-        for t in range(num2_list.__sizeof__):
+    for k in range(len(num1_list)):
+        for t in range(len(num2_list)):
             if num1_list[i] == num2_list[j]:
                 return str(False)
             
